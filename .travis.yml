@@ -5,13 +5,13 @@ dist: trusty
 services:
   - mongodb
 env:
-  - PORT=5000
+  - PORT=3000
 cache: 
   directories:
     - node_modules
 install:
   - npm install
 script:
-  - nohup npm run start &
+  - nohup npm start &
   - sleep 3
-  - npm run test
+  - npm test
