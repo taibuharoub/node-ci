@@ -7,7 +7,7 @@ const cors = require("cors");
 const Sentry = require("@sentry/node");
 const Tracing = require("@sentry/tracing");
 const multerUploads = require("./utils/multer");
-const { accessLogStream } = require("./helpers/logging");
+// const { accessLogStream } = require("./helpers/logging");
 require("dotenv").config();
 
 const configRoutes = require("./routes");
