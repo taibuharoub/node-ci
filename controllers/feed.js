@@ -29,6 +29,7 @@ exports.getPosts = async (req, res, next) => {
 };
 
 exports.createPost = async (req, res, next) => {
+  try {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     const error = new Error('Validation failed, entered data is incorrect.');
@@ -49,7 +50,7 @@ exports.createPost = async (req, res, next) => {
     imageUrl: imageUrl,
     creator: req.userId
   });
-  try {
+
     await post.save();
     const user = await User.findById(req.userId);
     user.posts.push(post);
