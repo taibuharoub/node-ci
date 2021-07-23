@@ -30,7 +30,7 @@ server.use(Sentry.Handlers.requestHandler());
 server.use(Sentry.Handlers.tracingHandler());
 server.use(cors());
 server.use(compression());
-server.use(morgan("combined", { stream: accessLogStream }));
+// server.use(morgan("combined", { stream: accessLogStream }));
 
 configRoutes(server);
 
