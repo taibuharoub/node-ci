@@ -15,7 +15,7 @@ const configRoutes = require("./routes");
 const server = express();
 
 Sentry.init({
-    dsn: process.env.SENTRY_URL,
+    dsn: "https://aa0366b5c95548f3bbb655b89c1bc065@o785359.ingest.sentry.io/5877410",
     integrations: [
         new Sentry.Integrations.Http({ tracing: true }),
         new Tracing.Integrations.Express({ server }),
