@@ -24,7 +24,6 @@ Sentry.init({
 });
 server.use(express.json());
 server.use(multerUploads);
-server.use(express.json());
 server.use(express.urlencoded({ extended: false}));
 server.use("/images", express.static(path.join(__dirname, "images")));
 server.use(Sentry.Handlers.requestHandler());
