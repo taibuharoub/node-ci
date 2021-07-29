@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> Wiring Up Continuous Integration with Travis CI, Build a CI to automatically build and test our projects
+> Wiring Up Continuous Integration with Travis CI, Build a CI Server to automatically build and test your projects
 
 ### 🏠 [Homepage](https://github.com/taibuharoub/node-ci#readme)
 
@@ -27,13 +27,13 @@ npm install
 ## Usage
 
 ```sh
-npm run start
+npm start
 ```
 
 ## Run tests
 
 ```sh
-npm run test
+npm test
 ```
 
 ## Author
